@@ -1,5 +1,9 @@
 ### This repository is a playground for collaboration in Active Inference and Epistemic Planning
-The main folder that our research will be based on will be in `aif_multi_robot`. The most updated notebook is `notebook_aif_iterative_goals.ipynb` which allows the robots to iteratively select and complete goals. The most updated notebook for single goals is `notebook_aif_single_goals.ipynb`
+The most updated notebook is `notebook_aif_iterative_goals.ipynb` which allows the robots to iteratively select and complete goals. The most updated notebook for single goals is `notebook_aif_single_goals.ipynb`. The output of these files is a mp4 or interactive plot of robots completing the mission objectives. Toggle parameters such as:
+1. `use_ep`: Set to `True` or `False` to toggle our approach
+2. `greedy`: Set to `True` if you want to use a greedy approach (zero-order reasoning). If true, does not allow first or higher order reasoning from (1)
+3. `convergence_type`: Set to `convergent` if you want robots to have a rendezvous mission and `exclusive` if running task allocation
+Note: `convergence_type` should always be exclusive in the `notebook_aif_iterative_goals.ipynb`
 
 ##### Installation
 The following installation instructions assume ROS Noetic, Gazebo, and Ubuntu 20.04 are installed
@@ -54,7 +58,7 @@ roslaunch multi_jackal_aif amcl_aif_launch.launch
 
 You can view the rviz instance by going to:
 ```
-rosrun rviz rviz -d /home/bezzo/jackal_ws/src/aif_package/aif_multi_robot/aif_catkin_ws/aif_gazebo/rviz/two_jackal_rviz.rviz
+rosrun rviz rviz -d <rviz_path> # Example included in: ~/jackal_ws/src/aif_package/aif_multi_robot/aif_catkin_ws/aif_gazebo/rviz/two_jackal_rviz.rviz
 ```
 If you aren't familiar with tmux and you want to stop the entire tmux server type below in a new terminal window:
 ```
@@ -84,21 +88,3 @@ changes to code will occur in the AIF_GAZEBO>scripts>experiment_methods>aif_func
 3. Baseline paper for multi-robot task allocation (CBBA): [Consensus-Based Decentralized Auctions for Robust Task Allocation](https://dspace.mit.edu/bitstream/handle/1721.1/52330/Choi_Consensus-Based-Decentralized.pdf?sequence=2)
 4. Simple decentralized rendezvous paper that I really like: [Bayesian Rendezvous for Distributed Robotic Systems](https://web.archive.org/web/20170818191431id_/https://infoscience.epfl.ch/record/168217/files/paper.pdf)
 
-
-
-### Notes from Lauren
-###### Things I have tried
-1. Incorporating different types of sensors
-2. Measuring with both heading and angle to goal - currently implemented
-3. Added `use_ep` parameter that can toggle an additional layer of reasoning
-4. Robots can now update each robot's belief in an isolated manner and reason about the aggregation
-    - I think this will allow robot's to consider gains in entropy for each belief rather than the whole
-###### Where I think its headed
-1. Test if convergence of belief is faster with 2nd order reasoning versus 1st order
-2. Compare to general bayesian belief updates
-3. When does it work? When does it not work? 
-###### TODO
-1. Policy horizon - given all possible combinations or an intuitive sampling of policies from all robots, what next step minimizes free energy 
-2. Add baseline heuristic that assesses a greedy or partitioning policy
-
-### Notes from Jon
