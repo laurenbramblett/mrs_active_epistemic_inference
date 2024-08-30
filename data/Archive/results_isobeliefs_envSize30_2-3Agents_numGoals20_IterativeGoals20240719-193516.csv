@@ -1,0 +1,61 @@
+seed,converged,num_goals,num_agents,agent_types,use_ep,greedy,num_iters
+0,True,20,2,['B' 'A'],True,True,67
+0,True,20,2,['B' 'A'],True,False,73
+0,True,20,2,['B' 'A'],False,False,91
+0,True,20,3,['A' 'A' 'B'],True,True,94
+0,True,20,3,['A' 'A' 'B'],True,False,60
+0,True,20,3,['A' 'A' 'B'],False,False,80
+1,True,20,2,['B' 'B'],True,True,86
+1,True,20,2,['B' 'B'],True,False,129
+1,True,20,2,['B' 'B'],False,False,113
+1,True,20,3,['B' 'B' 'A'],True,True,74
+1,True,20,3,['B' 'B' 'A'],True,False,57
+1,True,20,3,['B' 'B' 'A'],False,False,57
+2,True,20,2,['A' 'A'],True,True,77
+2,True,20,2,['A' 'A'],True,False,48
+2,True,20,2,['A' 'A'],False,False,48
+2,True,20,3,['A' 'A' 'A'],True,True,75
+2,True,20,3,['A' 'A' 'A'],True,False,75
+2,True,20,3,['A' 'A' 'A'],False,False,75
+3,True,20,2,['A' 'B'],True,True,89
+3,True,20,2,['A' 'B'],True,False,80
+3,True,20,2,['A' 'B'],False,False,81
+3,True,20,3,['A' 'A' 'A'],True,True,85
+3,True,20,3,['A' 'A' 'A'],True,False,93
+3,True,20,3,['A' 'A' 'A'],False,False,58
+4,True,20,2,['B' 'A'],True,True,141
+4,True,20,2,['B' 'A'],True,False,111
+4,True,20,2,['B' 'A'],False,False,85
+4,True,20,3,['B' 'A' 'B'],True,True,131
+4,True,20,3,['B' 'A' 'B'],True,False,107
+4,True,20,3,['B' 'A' 'B'],False,False,107
+5,True,20,2,['B' 'A'],True,True,89
+5,True,20,2,['B' 'A'],True,False,65
+5,True,20,2,['B' 'A'],False,False,74
+5,True,20,3,['B' 'A' 'B'],True,True,100
+5,True,20,3,['B' 'A' 'B'],True,False,73
+5,True,20,3,['B' 'A' 'B'],False,False,60
+6,True,20,2,['B' 'B'],True,True,114
+6,True,20,2,['B' 'B'],True,False,101
+6,True,20,2,['B' 'B'],False,False,90
+6,True,20,3,['B' 'B' 'B'],True,True,90
+6,True,20,3,['B' 'B' 'B'],True,False,99
+6,True,20,3,['B' 'B' 'B'],False,False,124
+7,True,20,2,['A' 'B'],True,True,120
+7,True,20,2,['A' 'B'],True,False,70
+7,True,20,2,['A' 'B'],False,False,79
+7,True,20,3,['A' 'B' 'B'],True,True,79
+7,True,20,3,['A' 'B' 'B'],True,False,75
+7,True,20,3,['A' 'B' 'B'],False,False,62
+8,True,20,2,['B' 'A'],True,True,60
+8,True,20,2,['B' 'A'],True,False,104
+8,True,20,2,['B' 'A'],False,False,85
+8,True,20,3,['B' 'A' 'B'],True,True,56
+8,True,20,3,['B' 'A' 'B'],True,False,75
+8,True,20,3,['B' 'A' 'B'],False,False,77
+9,True,20,2,['B' 'B'],True,True,75
+9,True,20,2,['B' 'B'],True,False,133
+9,True,20,2,['B' 'B'],False,False,92
+9,True,20,3,['B' 'B' 'B'],True,True,74
+9,True,20,3,['B' 'B' 'B'],True,False,111
+9,True,20,3,['B' 'B' 'B'],False,False,73

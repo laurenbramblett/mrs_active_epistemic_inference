@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<!-- Launches Jackal Gazebo simulation in an empty world. -->
+
+<launch>
+
+  <arg name="gui"        default="false"/>
+  <arg name="rviz"       default="false"/>
+  <arg name="config0"    default="front_laser"/>
+  <arg name="config1"    default="front_laser"/>
+  <arg name="world"      default="empty.world"/>
+  <arg name="map_file"   default="$(find astar)/maps/capstone_stuff.yaml" />
+  <arg name="config_file" default="$(find multi_jackal_aif)/configs/aif_gazebo_convergent_params.yaml" />
+  <param name="params_file" type="string" value="$(arg config_file)" />
+  <rosparam file="$(arg config_file)" command="load" />
+
+  <!-- Start Gazebo with an empty world. -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui"          value="$(arg gui)"/>	
+    <arg name="world_name"   value="$(find multi_jackal_tutorials)/worlds/$(arg world)"/>
+  </include>
+ 
+  <!-- Run the map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" >
+    <param name="frame_id" value="map"/>
+  </node>
+  <!-- Start planning service -->
+  <node pkg="multi_jackal_aif" type="active_inference_server.py" name="active_inference_server" output="screen" >
+    <remap to="aif_service_topic" from="aif_service_topic" />
+    <remap to="aif_service_name" from="aif_service_call" />
+  </node>
+ 
+  <!--Transform frame id for scanners-->
+  <node pkg="multi_jackal_aif" type="translate_frame_id.py" name="translate_frame_id" output="screen">
+  </node>
+
+  <node pkg="multi_jackal_aif" type="launch_amcl.py" name="launch_amcl" output="screen" />
+
+</launch>

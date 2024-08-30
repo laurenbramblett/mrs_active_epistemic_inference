@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<!-- Launches Jackal Gazebo simulation in an empty world. -->
+
+<launch>
+
+  <arg name="gui"        default="false"/>
+  <arg name="rviz"       default="false"/>
+  <arg name="world"      default="empty.world"/>
+  <!-- <arg name="map_file"   default="$(find astar)/maps/capstone_stuff.yaml" /> -->
+  <arg name="config_file" default="$(find multi_jackal_aif)/configs/aif_lab_params.yaml" />
+  <param name="params_file" type="string" value="$(arg config_file)" />
+  <rosparam file="$(arg config_file)" command="load" />
+
+  <!-- Launch Vicon -->
+  <include file="$(find vicon_bridge)/launch/vicon.launch">
+  </include>
+
+  <!-- Transform vicon to pose topic -->
+  <node pkg="multi_jackal_aif" type="transform_vicon_to_pose.py" name="transform_vicon_to_pose" output="screen" />
+
+  <!-- Start planning service -->
+  <node pkg="multi_jackal_aif" type="active_inference_server.py" name="active_inference_server" output="screen" >
+    <remap to="aif_service_topic" from="aif_service_topic" />
+    <remap to="aif_service_name" from="aif_service_call" />
+  </node>
+ 
+  <!-- Transform vicon/world to map frame -->
+  <node pkg="tf" type="static_transform_publisher" name="vicon_to_map" args="0 0 0 0 0 0 /map /vicon/world 100" />
+
+  <!-- Publish goal vizualization -->
+  <node pkg="multi_jackal_aif" type="lab_goal_publisher.py" name="publish_goal" output="screen" />
+
+  <!-- Launch Rosbot methods --> 
+  <node pkg="multi_jackal_aif" type="launch_lab_robots.py" name="launch_lab_robots" output="screen" />
+
+</launch>

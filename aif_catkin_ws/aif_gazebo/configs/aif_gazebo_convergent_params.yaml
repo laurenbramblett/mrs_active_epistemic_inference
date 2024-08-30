@@ -1,0 +1,108 @@
+# This YAML file is the parameters for an example of the AIF multi-robot simulation in Gazebo.
+# The parameters are used to define the number of robots, the initial positions of the robots, and the initial positions of the obstacles.
+goals: [[-5.0, -2.0], [2.0, 2.0],[0,-4]] # The goal positions of the robots in the map
+max_distance_measure: 15.0 # The maximum distance that the robots can measure (should be the size of the map approximately or larger)
+observation_error_std: 0.0 # The standard deviation of the observation error
+use_ep: false # Use depth of reasoning (Epistemic logic) or not
+use_rhc: false # Use Receding Horizon Control (RHC) or not
+convergence_type: 'exclusive' # The convergence type of the simulation (exclusive or convergent)
+use_threading: false # Use threading for the simulation or not
+use_mcts: false # Use Monte Carlo Tree Search (MCTS) for the simulation or not
+horizon: 1 # The horizon of the MCTS
+mcts_iterations: 1000 # The number of iterations for the MCTS
+aif_service_name: 'aif_start_planning' # The topic name of the AIF rosservice -- this starts the aif node to send commands to robot
+aif_service_topic: 'aif_service' # The topic name that the AIF node listens to
+dt: 0.1 # The time step of the simulation
+world_frame_id: 'world' # The frame ID of the world
+convergence_threshold: 0.6 # The threshold for the convergence
+greedy: false # Use greedy algorithm or not #TODO: Implement this
+max_reward_configs: 200 # The maximum number of reward configurations (needed if there are a lot of combinations possible - e.g. 10 robots with 10 goals)
+use_iterative: false # Use iterative algorithm or not to plan to multiple goals
+
+agents:
+  - id: 0
+    namespace: 'jackal0'
+    sensors: 'front_laser' # The sensor name for the robot
+    velocity_arg_num: 4 # The velocity options of the robot
+    velocity_min: 0.0 # The minimum velocity of the robot
+    velocity_max: 0.2 # The maximum velocity of the robot
+    heading_arg_num: 8 # The heading options of the robot
+    heading_min: -1.57 # The minimum angular velocity of the robot
+    heading_max: 1.57 # The maximum angular velocity of the robot
+    pose_topic: 'amcl_pose' # The topic name of the pose
+    move_topic: 'jackal_velocity_controller/cmd_vel' # The topic name of the velocity command
+    scan_topic: 'front/scan' # The topic name of the laser scan
+    transformed_scan_topic: 'transformed_scan'
+    scan_frame_id: 'front_laser' # The frame ID of the laser scan
+    agent_type: 'A' # The type of measurement that the robot can make (A: Depth, B: Relative Angle)
+    init_x: 0.0 # The initial x position of the robot
+    init_y: 0.0 # The initial y position of the robot
+    init_z: 0.0 # The initial z position of the robot (not used for ground vehicles)
+    init_yaw: 0.0 # The initial orientation of the robot
+    home_base: [0.0, 0.0] # The home base of the robot
+    dt: 0.1 # The planning time step of the robot
+
+  - id: 1
+    namespace: 'jackal1'
+    sensors: 'front_laser'
+    velocity_arg_num: 4 # The velocity options of the robot
+    velocity_min: 0.0 # The minimum velocity of the robot
+    velocity_max: 0.2 # The maximum velocity of the robot
+    heading_arg_num: 8 # The heading options of the robot
+    heading_min: -1.57 # The minimum angular velocity of the robot
+    heading_max: 1.57 # The maximum angular velocity of the robot
+    pose_topic: 'amcl_pose'
+    move_topic: 'jackal_velocity_controller/cmd_vel'
+    scan_topic: 'front/scan'
+    scan_frame_id: 'front_laser'
+    transformed_scan_topic: 'transformed_scan'
+    agent_type: 'A'
+    init_x: 1.0
+    init_y: 0.0
+    init_z: 0.0
+    init_yaw: 0.0
+    home_base: [0.0, 0.0]
+    dt: 0.1 
+
+  # - id: 2
+  #   namespace: 'jackal2'
+  #   sensors: 'front_laser'
+  #   velocity_arg_num: 4 # The velocity options of the robot
+  #   velocity_min: 0.0 # The minimum velocity of the robot
+  #   velocity_max: 0.2 # The maximum velocity of the robot
+  #   heading_arg_num: 8 # The heading options of the robot
+  #   heading_min: -1.57 # The minimum angular velocity of the robot
+  #   heading_max: 1.57 # The maximum angular velocity of the robot
+  #   pose_topic: 'amcl_pose'
+  #   move_topic: 'jackal_velocity_controller/cmd_vel'
+  #   scan_topic: 'front/scan'
+  #   scan_frame_id: 'front_laser'
+  #   transformed_scan_topic: 'transformed_scan'
+  #   agent_type: 'A'
+  #   init_x: 1.0
+  #   init_y: 1.0
+  #   init_z: 0.0
+  #   init_yaw: 0.0
+  #   home_base: [1.0, 1.0]
+
+  - id: 2
+    namespace: 'firefly2'
+    sensors: 'generic_odometry'
+    velocity_arg_num: 4
+    velocity_min: 0.0
+    velocity_max: 0.4
+    heading_arg_num: 8
+    heading_min: -1.57
+    heading_max: 1.57
+    pose_topic: 'amcl_pose'
+    move_topic: 'command/pose'
+    scan_topic: 'scan'
+    scan_frame_id: 'generic_odometry'
+    transformed_scan_topic: 'transformed_scan'
+    agent_type: 'B'
+    init_x: 1.0
+    init_y: 1.0
+    init_z: 1.0
+    init_yaw: 0.0
+    dt: 1.0
+    home_base: [0.0, 0.0]

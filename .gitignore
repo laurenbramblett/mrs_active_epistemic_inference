@@ -1,0 +1,10 @@
+*videos/
+*.xlsx
+*.mp4
+*.MP4
+*.asv
+*.pyc
+*code-workspace
+*venv/
+*myenv
+*.bag

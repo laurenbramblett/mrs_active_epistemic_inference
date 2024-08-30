@@ -1,0 +1,401 @@
+seed,converged,num_goals,num_agents,agent_types,use_ep,num_iters
+0,True,2,2,['A' 'A'],True,12
+0,False,3,3,['A' 'B' 'B'],True,99
+0,False,4,4,['B' 'A' 'B' 'B'],True,99
+0,True,5,5,['A' 'B' 'A' 'B' 'B'],True,25
+0,True,2,2,['A' 'A'],False,12
+0,False,3,3,['A' 'B' 'B'],False,99
+0,False,4,4,['B' 'A' 'B' 'B'],False,99
+0,False,5,5,['A' 'B' 'A' 'B' 'B'],False,99
+1,True,2,2,['A' 'B'],True,39
+1,True,3,3,['B' 'A' 'A'],True,19
+1,False,4,4,['B' 'B' 'B' 'B'],True,99
+1,False,5,5,['B' 'B' 'B' 'B' 'B'],True,99
+1,True,2,2,['A' 'B'],False,16
+1,True,3,3,['B' 'A' 'A'],False,20
+1,False,4,4,['B' 'B' 'B' 'B'],False,99
+1,False,5,5,['B' 'B' 'B' 'B' 'B'],False,99
+2,True,2,2,['B' 'B'],True,22
+2,True,3,3,['B' 'A' 'A'],True,14
+2,True,4,4,['A' 'B' 'A' 'A'],True,13
+2,True,5,5,['A' 'A' 'A' 'B' 'B'],True,19
+2,True,2,2,['B' 'B'],False,18
+2,True,3,3,['B' 'A' 'A'],False,14
+2,True,4,4,['A' 'B' 'A' 'A'],False,24
+2,False,5,5,['A' 'A' 'A' 'B' 'B'],False,99
+3,True,2,2,['B' 'A'],True,20
+3,False,3,3,['A' 'A' 'B'],True,99
+3,True,4,4,['A' 'B' 'B' 'A'],True,16
+3,False,5,5,['B' 'A' 'A' 'B' 'A'],True,99
+3,True,2,2,['B' 'A'],False,23
+3,False,3,3,['A' 'A' 'B'],False,99
+3,False,4,4,['A' 'B' 'B' 'A'],False,99
+3,True,5,5,['B' 'A' 'A' 'B' 'A'],False,80
+4,True,2,2,['B' 'B'],True,27
+4,True,3,3,['A' 'A' 'B'],True,41
+4,True,4,4,['A' 'B' 'A' 'A'],True,33
+4,True,5,5,['A' 'B' 'A' 'A' 'B'],True,45
+4,True,2,2,['B' 'B'],False,26
+4,True,3,3,['A' 'A' 'B'],False,40
+4,False,4,4,['A' 'B' 'A' 'A'],False,99
+4,False,5,5,['A' 'B' 'A' 'A' 'B'],False,99
+5,True,2,2,['B' 'A'],True,53
+5,True,3,3,['A' 'B' 'B'],True,31
+5,True,4,4,['B' 'A' 'A' 'B'],True,74
+5,False,5,5,['A' 'B' 'A' 'B' 'A'],True,99
+5,True,2,2,['B' 'A'],False,76
+5,True,3,3,['A' 'B' 'B'],False,71
+5,False,4,4,['B' 'A' 'A' 'B'],False,99
+5,True,5,5,['A' 'B' 'A' 'B' 'A'],False,89
+6,True,2,2,['B' 'B'],True,32
+6,True,3,3,['A' 'A' 'B'],True,38
+6,True,4,4,['B' 'B' 'A' 'A'],True,31
+6,True,5,5,['A' 'B' 'A' 'A' 'A'],True,41
+6,True,2,2,['B' 'B'],False,33
+6,True,3,3,['A' 'A' 'B'],False,26
+6,False,4,4,['B' 'B' 'A' 'A'],False,99
+6,True,5,5,['A' 'B' 'A' 'A' 'A'],False,41
+7,True,2,2,['A' 'A'],True,49
+7,True,3,3,['A' 'A' 'B'],True,29
+7,True,4,4,['A' 'B' 'B' 'A'],True,15
+7,False,5,5,['B' 'B' 'A' 'A' 'A'],True,99
+7,True,2,2,['A' 'A'],False,49
+7,True,3,3,['A' 'A' 'B'],False,29
+7,False,4,4,['A' 'B' 'B' 'A'],False,99
+7,False,5,5,['B' 'B' 'A' 'A' 'A'],False,99
+8,False,2,2,['A' 'B'],True,99
+8,True,3,3,['A' 'B' 'A'],True,19
+8,False,4,4,['B' 'A' 'B' 'B'],True,99
+8,True,5,5,['A' 'A' 'A' 'B' 'B'],True,24
+8,True,2,2,['A' 'B'],False,32
+8,True,3,3,['A' 'B' 'A'],False,19
+8,False,4,4,['B' 'A' 'B' 'B'],False,99
+8,True,5,5,['A' 'A' 'A' 'B' 'B'],False,38
+9,True,2,2,['A' 'B'],True,12
+9,True,3,3,['A' 'B' 'A'],True,17
+9,True,4,4,['A' 'A' 'A' 'A'],True,17
+9,False,5,5,['B' 'B' 'B' 'B' 'A'],True,99
+9,True,2,2,['A' 'B'],False,12
+9,True,3,3,['A' 'B' 'A'],False,17
+9,True,4,4,['A' 'A' 'A' 'A'],False,17
+9,False,5,5,['B' 'B' 'B' 'B' 'A'],False,99
+10,True,2,2,['A' 'A'],True,17
+10,False,3,3,['B' 'B' 'A'],True,99
+10,True,4,4,['A' 'A' 'A' 'B'],True,33
+10,False,5,5,['B' 'B' 'B' 'A' 'B'],True,99
+10,True,2,2,['A' 'A'],False,17
+10,False,3,3,['B' 'B' 'A'],False,99
+10,False,4,4,['A' 'A' 'A' 'B'],False,99
+10,False,5,5,['B' 'B' 'B' 'A' 'B'],False,99
+11,True,2,2,['A' 'B'],True,20
+11,True,3,3,['A' 'B' 'B'],True,21
+11,True,4,4,['A' 'B' 'B' 'A'],True,24
+11,False,5,5,['B' 'B' 'A' 'B' 'B'],True,99
+11,True,2,2,['A' 'B'],False,21
+11,False,3,3,['A' 'B' 'B'],False,99
+11,False,4,4,['A' 'B' 'B' 'A'],False,99
+11,False,5,5,['B' 'B' 'A' 'B' 'B'],False,99
+12,True,2,2,['A' 'B'],True,28
+12,False,3,3,['B' 'A' 'B'],True,99
+12,True,4,4,['A' 'B' 'B' 'A'],True,30
+12,True,5,5,['A' 'A' 'B' 'B' 'B'],True,27
+12,True,2,2,['A' 'B'],False,31
+12,True,3,3,['B' 'A' 'B'],False,84
+12,False,4,4,['A' 'B' 'B' 'A'],False,99
+12,False,5,5,['A' 'A' 'B' 'B' 'B'],False,99
+13,True,2,2,['A' 'B'],True,11
+13,True,3,3,['A' 'B' 'B'],True,29
+13,True,4,4,['B' 'A' 'A' 'A'],True,37
+13,True,5,5,['A' 'A' 'A' 'B' 'B'],True,64
+13,True,2,2,['A' 'B'],False,13
+13,False,3,3,['A' 'B' 'B'],False,99
+13,False,4,4,['B' 'A' 'A' 'A'],False,99
+13,False,5,5,['A' 'A' 'A' 'B' 'B'],False,99
+14,True,2,2,['B' 'A'],True,16
+14,True,3,3,['A' 'A' 'A'],True,32
+14,False,4,4,['B' 'A' 'B' 'B'],True,99
+14,False,5,5,['B' 'A' 'B' 'B' 'A'],True,99
+14,True,2,2,['B' 'A'],False,18
+14,True,3,3,['A' 'A' 'A'],False,30
+14,False,4,4,['B' 'A' 'B' 'B'],False,99
+14,False,5,5,['B' 'A' 'B' 'B' 'A'],False,99
+15,True,2,2,['B' 'B'],True,26
+15,False,3,3,['B' 'B' 'B'],True,99
+15,True,4,4,['A' 'B' 'A' 'A'],True,23
+15,True,5,5,['B' 'A' 'A' 'B' 'A'],True,51
+15,True,2,2,['B' 'B'],False,20
+15,False,3,3,['B' 'B' 'B'],False,99
+15,True,4,4,['A' 'B' 'A' 'A'],False,22
+15,False,5,5,['B' 'A' 'A' 'B' 'A'],False,99
+16,True,2,2,['A' 'A'],True,12
+16,True,3,3,['A' 'A' 'B'],True,16
+16,True,4,4,['A' 'B' 'A' 'B'],True,16
+16,True,5,5,['A' 'B' 'A' 'A' 'B'],True,31
+16,True,2,2,['A' 'A'],False,12
+16,True,3,3,['A' 'A' 'B'],False,16
+16,False,4,4,['A' 'B' 'A' 'B'],False,99
+16,False,5,5,['A' 'B' 'A' 'A' 'B'],False,99
+17,True,2,2,['A' 'B'],True,55
+17,True,3,3,['A' 'B' 'A'],True,34
+17,True,4,4,['A' 'B' 'B' 'B'],True,23
+17,True,5,5,['A' 'A' 'A' 'A' 'B'],True,34
+17,True,2,2,['A' 'B'],False,55
+17,True,3,3,['A' 'B' 'A'],False,34
+17,False,4,4,['A' 'B' 'B' 'B'],False,99
+17,False,5,5,['A' 'A' 'A' 'A' 'B'],False,99
+18,True,2,2,['A' 'A'],True,33
+18,True,3,3,['A' 'A' 'B'],True,28
+18,True,4,4,['A' 'B' 'A' 'B'],True,39
+18,True,5,5,['B' 'B' 'A' 'A' 'A'],True,61
+18,True,2,2,['A' 'A'],False,33
+18,True,3,3,['A' 'A' 'B'],False,28
+18,False,4,4,['A' 'B' 'A' 'B'],False,99
+18,True,5,5,['B' 'B' 'A' 'A' 'A'],False,41
+19,True,2,2,['A' 'A'],True,26
+19,False,3,3,['B' 'B' 'B'],True,99
+19,True,4,4,['A' 'B' 'B' 'A'],True,14
+19,True,5,5,['A' 'A' 'B' 'B' 'A'],True,27
+19,True,2,2,['A' 'A'],False,26
+19,False,3,3,['B' 'B' 'B'],False,99
+19,False,4,4,['A' 'B' 'B' 'A'],False,99
+19,False,5,5,['A' 'A' 'B' 'B' 'A'],False,99
+20,True,2,2,['A' 'A'],True,33
+20,True,3,3,['A' 'A' 'B'],True,29
+20,True,4,4,['A' 'A' 'B' 'B'],True,35
+20,False,5,5,['B' 'B' 'B' 'B' 'B'],True,99
+20,True,2,2,['A' 'A'],False,33
+20,True,3,3,['A' 'A' 'B'],False,29
+20,False,4,4,['A' 'A' 'B' 'B'],False,99
+20,False,5,5,['B' 'B' 'B' 'B' 'B'],False,99
+21,True,2,2,['A' 'B'],True,19
+21,True,3,3,['A' 'A' 'A'],True,38
+21,True,4,4,['A' 'B' 'B' 'A'],True,39
+21,True,5,5,['A' 'A' 'A' 'A' 'B'],True,25
+21,True,2,2,['A' 'B'],False,23
+21,True,3,3,['A' 'A' 'A'],False,37
+21,False,4,4,['A' 'B' 'B' 'A'],False,99
+21,False,5,5,['A' 'A' 'A' 'A' 'B'],False,99
+22,True,2,2,['B' 'A'],True,9
+22,True,3,3,['A' 'A' 'B'],True,13
+22,True,4,4,['A' 'B' 'A' 'B'],True,17
+22,False,5,5,['B' 'B' 'B' 'B' 'A'],True,99
+22,True,2,2,['B' 'A'],False,12
+22,True,3,3,['A' 'A' 'B'],False,13
+22,False,4,4,['A' 'B' 'A' 'B'],False,99
+22,False,5,5,['B' 'B' 'B' 'B' 'A'],False,99
+23,True,2,2,['B' 'A'],True,26
+23,True,3,3,['A' 'B' 'A'],True,25
+23,False,4,4,['B' 'B' 'B' 'B'],True,99
+23,True,5,5,['A' 'B' 'B' 'A' 'B'],True,17
+23,True,2,2,['B' 'A'],False,26
+23,False,3,3,['A' 'B' 'A'],False,99
+23,False,4,4,['B' 'B' 'B' 'B'],False,99
+23,False,5,5,['A' 'B' 'B' 'A' 'B'],False,99
+24,True,2,2,['B' 'B'],True,23
+24,False,3,3,['B' 'B' 'B'],True,99
+24,False,4,4,['B' 'B' 'B' 'A'],True,99
+24,True,5,5,['A' 'A' 'B' 'A' 'B'],True,17
+24,True,2,2,['B' 'B'],False,25
+24,False,3,3,['B' 'B' 'B'],False,99
+24,False,4,4,['B' 'B' 'B' 'A'],False,99
+24,False,5,5,['A' 'A' 'B' 'A' 'B'],False,99
+25,True,2,2,['B' 'A'],True,9
+25,False,3,3,['B' 'A' 'B'],True,99
+25,True,4,4,['B' 'B' 'A' 'A'],True,18
+25,True,5,5,['B' 'A' 'A' 'A' 'B'],True,22
+25,True,2,2,['B' 'A'],False,9
+25,True,3,3,['B' 'A' 'B'],False,29
+25,True,4,4,['B' 'B' 'A' 'A'],False,18
+25,True,5,5,['B' 'A' 'A' 'A' 'B'],False,27
+26,True,2,2,['B' 'B'],True,23
+26,True,3,3,['A' 'A' 'B'],True,21
+26,False,4,4,['B' 'B' 'A' 'B'],True,99
+26,True,5,5,['A' 'A' 'B' 'B' 'B'],True,30
+26,True,2,2,['B' 'B'],False,25
+26,False,3,3,['A' 'A' 'B'],False,99
+26,False,4,4,['B' 'B' 'A' 'B'],False,99
+26,False,5,5,['A' 'A' 'B' 'B' 'B'],False,99
+27,True,2,2,['A' 'A'],True,32
+27,False,3,3,['B' 'B' 'B'],True,99
+27,True,4,4,['B' 'B' 'A' 'A'],True,20
+27,False,5,5,['A' 'B' 'B' 'A' 'B'],True,99
+27,True,2,2,['A' 'A'],False,32
+27,False,3,3,['B' 'B' 'B'],False,99
+27,False,4,4,['B' 'B' 'A' 'A'],False,99
+27,False,5,5,['A' 'B' 'B' 'A' 'B'],False,99
+28,True,2,2,['A' 'A'],True,20
+28,True,3,3,['A' 'A' 'B'],True,43
+28,True,4,4,['A' 'B' 'A' 'A'],True,20
+28,True,5,5,['A' 'A' 'B' 'A' 'A'],True,34
+28,True,2,2,['A' 'A'],False,20
+28,True,3,3,['A' 'A' 'B'],False,29
+28,False,4,4,['A' 'B' 'A' 'A'],False,99
+28,False,5,5,['A' 'A' 'B' 'A' 'A'],False,99
+29,True,2,2,['B' 'B'],True,77
+29,True,3,3,['A' 'A' 'B'],True,19
+29,True,4,4,['A' 'A' 'B' 'A'],True,16
+29,True,5,5,['A' 'A' 'B' 'A' 'B'],True,20
+29,True,2,2,['B' 'B'],False,24
+29,True,3,3,['A' 'A' 'B'],False,19
+29,True,4,4,['A' 'A' 'B' 'A'],False,17
+29,False,5,5,['A' 'A' 'B' 'A' 'B'],False,99
+30,True,2,2,['B' 'B'],True,21
+30,True,3,3,['A' 'A' 'A'],True,34
+30,False,4,4,['B' 'A' 'A' 'B'],True,99
+30,True,5,5,['A' 'B' 'B' 'A' 'B'],True,64
+30,True,2,2,['B' 'B'],False,14
+30,True,3,3,['A' 'A' 'A'],False,34
+30,False,4,4,['B' 'A' 'A' 'B'],False,99
+30,False,5,5,['A' 'B' 'B' 'A' 'B'],False,99
+31,True,2,2,['A' 'A'],True,40
+31,False,3,3,['B' 'A' 'B'],True,99
+31,True,4,4,['A' 'B' 'B' 'A'],True,49
+31,False,5,5,['B' 'B' 'A' 'B' 'A'],True,99
+31,True,2,2,['A' 'A'],False,40
+31,False,3,3,['B' 'A' 'B'],False,99
+31,False,4,4,['A' 'B' 'B' 'A'],False,99
+31,False,5,5,['B' 'B' 'A' 'B' 'A'],False,99
+32,True,2,2,['A' 'B'],True,18
+32,True,3,3,['A' 'A' 'A'],True,36
+32,False,4,4,['B' 'B' 'A' 'B'],True,99
+32,True,5,5,['A' 'B' 'A' 'B' 'A'],True,25
+32,True,2,2,['A' 'B'],False,24
+32,True,3,3,['A' 'A' 'A'],False,36
+32,False,4,4,['B' 'B' 'A' 'B'],False,99
+32,False,5,5,['A' 'B' 'A' 'B' 'A'],False,99
+33,True,2,2,['B' 'B'],True,33
+33,True,3,3,['A' 'A' 'A'],True,20
+33,True,4,4,['A' 'A' 'B' 'B'],True,13
+33,True,5,5,['A' 'B' 'B' 'A' 'B'],True,16
+33,True,2,2,['B' 'B'],False,27
+33,True,3,3,['A' 'A' 'A'],False,20
+33,False,4,4,['A' 'A' 'B' 'B'],False,99
+33,False,5,5,['A' 'B' 'B' 'A' 'B'],False,99
+34,True,2,2,['A' 'B'],True,17
+34,False,3,3,['A' 'B' 'A'],True,99
+34,True,4,4,['A' 'A' 'B' 'A'],True,37
+34,False,5,5,['A' 'B' 'A' 'A' 'B'],True,99
+34,True,2,2,['A' 'B'],False,22
+34,True,3,3,['A' 'B' 'A'],False,38
+34,True,4,4,['A' 'A' 'B' 'A'],False,40
+34,False,5,5,['A' 'B' 'A' 'A' 'B'],False,99
+35,True,2,2,['A' 'A'],True,55
+35,True,3,3,['A' 'B' 'A'],True,19
+35,False,4,4,['B' 'B' 'B' 'A'],True,99
+35,True,5,5,['A' 'B' 'A' 'A' 'A'],True,32
+35,True,2,2,['A' 'A'],False,55
+35,True,3,3,['A' 'B' 'A'],False,21
+35,False,4,4,['B' 'B' 'B' 'A'],False,99
+35,True,5,5,['A' 'B' 'A' 'A' 'A'],False,32
+36,True,2,2,['A' 'A'],True,29
+36,True,3,3,['A' 'A' 'A'],True,22
+36,False,4,4,['B' 'B' 'B' 'B'],True,99
+36,True,5,5,['B' 'A' 'B' 'A' 'B'],True,42
+36,True,2,2,['A' 'A'],False,29
+36,True,3,3,['A' 'A' 'A'],False,22
+36,False,4,4,['B' 'B' 'B' 'B'],False,99
+36,False,5,5,['B' 'A' 'B' 'A' 'B'],False,99
+37,True,2,2,['B' 'A'],True,14
+37,True,3,3,['A' 'A' 'A'],True,14
+37,True,4,4,['A' 'B' 'A' 'B'],True,18
+37,True,5,5,['A' 'B' 'B' 'A' 'B'],True,23
+37,True,2,2,['B' 'A'],False,15
+37,True,3,3,['A' 'A' 'A'],False,14
+37,False,4,4,['A' 'B' 'A' 'B'],False,99
+37,False,5,5,['A' 'B' 'B' 'A' 'B'],False,99
+38,True,2,2,['B' 'A'],True,22
+38,False,3,3,['B' 'B' 'B'],True,99
+38,False,4,4,['B' 'B' 'B' 'A'],True,99
+38,False,5,5,['A' 'B' 'B' 'A' 'B'],True,99
+38,True,2,2,['B' 'A'],False,22
+38,False,3,3,['B' 'B' 'B'],False,99
+38,False,4,4,['B' 'B' 'B' 'A'],False,99
+38,False,5,5,['A' 'B' 'B' 'A' 'B'],False,99
+39,True,2,2,['A' 'A'],True,18
+39,True,3,3,['A' 'A' 'A'],True,45
+39,True,4,4,['B' 'A' 'B' 'A'],True,82
+39,True,5,5,['B' 'A' 'B' 'B' 'B'],True,33
+39,True,2,2,['A' 'A'],False,18
+39,True,3,3,['A' 'A' 'A'],False,45
+39,True,4,4,['B' 'A' 'B' 'A'],False,56
+39,False,5,5,['B' 'A' 'B' 'B' 'B'],False,99
+40,True,2,2,['B' 'B'],True,24
+40,True,3,3,['A' 'A' 'B'],True,79
+40,False,4,4,['A' 'A' 'B' 'B'],True,99
+40,False,5,5,['B' 'B' 'A' 'B' 'B'],True,99
+40,True,2,2,['B' 'B'],False,18
+40,False,3,3,['A' 'A' 'B'],False,99
+40,False,4,4,['A' 'A' 'B' 'B'],False,99
+40,False,5,5,['B' 'B' 'A' 'B' 'B'],False,99
+41,True,2,2,['A' 'A'],True,46
+41,True,3,3,['A' 'A' 'B'],True,18
+41,False,4,4,['B' 'A' 'A' 'B'],True,99
+41,False,5,5,['B' 'A' 'B' 'A' 'A'],True,99
+41,True,2,2,['A' 'A'],False,46
+41,True,3,3,['A' 'A' 'B'],False,18
+41,False,4,4,['B' 'A' 'A' 'B'],False,99
+41,False,5,5,['B' 'A' 'B' 'A' 'A'],False,99
+42,True,2,2,['B' 'B'],True,28
+42,False,3,3,['B' 'B' 'B'],True,99
+42,False,4,4,['B' 'B' 'B' 'A'],True,99
+42,False,5,5,['A' 'A' 'B' 'B' 'B'],True,99
+42,True,2,2,['B' 'B'],False,30
+42,False,3,3,['B' 'B' 'B'],False,99
+42,False,4,4,['B' 'B' 'B' 'A'],False,99
+42,False,5,5,['A' 'A' 'B' 'B' 'B'],False,99
+43,True,2,2,['B' 'B'],True,42
+43,True,3,3,['A' 'B' 'A'],True,30
+43,False,4,4,['B' 'A' 'A' 'A'],True,99
+43,True,5,5,['A' 'B' 'A' 'A' 'A'],True,15
+43,True,2,2,['B' 'B'],False,25
+43,True,3,3,['A' 'B' 'A'],False,30
+43,False,4,4,['B' 'A' 'A' 'A'],False,99
+43,True,5,5,['A' 'B' 'A' 'A' 'A'],False,33
+44,True,2,2,['B' 'B'],True,53
+44,False,3,3,['B' 'B' 'B'],True,99
+44,True,4,4,['B' 'B' 'A' 'A'],True,24
+44,True,5,5,['A' 'B' 'B' 'A' 'A'],True,19
+44,True,2,2,['B' 'B'],False,20
+44,False,3,3,['B' 'B' 'B'],False,99
+44,True,4,4,['B' 'B' 'A' 'A'],False,17
+44,False,5,5,['A' 'B' 'B' 'A' 'A'],False,99
+45,True,2,2,['B' 'A'],True,19
+45,True,3,3,['A' 'A' 'A'],True,13
+45,True,4,4,['A' 'A' 'A' 'A'],True,19
+45,False,5,5,['A' 'B' 'B' 'B' 'B'],True,99
+45,True,2,2,['B' 'A'],False,20
+45,True,3,3,['A' 'A' 'A'],False,13
+45,True,4,4,['A' 'A' 'A' 'A'],False,19
+45,False,5,5,['A' 'B' 'B' 'B' 'B'],False,99
+46,True,2,2,['B' 'B'],True,29
+46,True,3,3,['A' 'A' 'A'],True,65
+46,True,4,4,['A' 'A' 'B' 'B'],True,32
+46,False,5,5,['B' 'A' 'B' 'A' 'A'],True,99
+46,True,2,2,['B' 'B'],False,23
+46,True,3,3,['A' 'A' 'A'],False,64
+46,False,4,4,['A' 'A' 'B' 'B'],False,99
+46,False,5,5,['B' 'A' 'B' 'A' 'A'],False,99
+47,True,2,2,['A' 'A'],True,24
+47,True,3,3,['B' 'A' 'B'],True,51
+47,True,4,4,['A' 'A' 'A' 'A'],True,33
+47,True,5,5,['A' 'B' 'B' 'B' 'A'],True,28
+47,True,2,2,['A' 'A'],False,24
+47,False,3,3,['B' 'A' 'B'],False,99
+47,True,4,4,['A' 'A' 'A' 'A'],False,34
+47,False,5,5,['A' 'B' 'B' 'B' 'A'],False,99
+48,True,2,2,['B' 'A'],True,52
+48,True,3,3,['B' 'A' 'A'],True,24
+48,True,4,4,['B' 'A' 'A' 'A'],True,18
+48,False,5,5,['B' 'A' 'A' 'B' 'B'],True,99
+48,True,2,2,['B' 'A'],False,52
+48,False,3,3,['B' 'A' 'A'],False,99
+48,True,4,4,['B' 'A' 'A' 'A'],False,19
+48,False,5,5,['B' 'A' 'A' 'B' 'B'],False,99
+49,True,2,2,['A' 'A'],True,14
+49,True,3,3,['A' 'B' 'A'],True,10
+49,True,4,4,['A' 'B' 'B' 'A'],True,23
+49,False,5,5,['B' 'B' 'B' 'A' 'B'],True,99
+49,True,2,2,['A' 'A'],False,14
+49,True,3,3,['A' 'B' 'A'],False,10
+49,False,4,4,['A' 'B' 'B' 'A'],False,99
+49,False,5,5,['B' 'B' 'B' 'A' 'B'],False,99

@@ -1,0 +1,112 @@
+# This YAML file is the parameters for an example of the AIF multi-robot simulation in Gazebo.
+# The parameters are used to define the number of robots, the initial positions of the robots, and the initial positions of the obstacles.
+# goals: [[-1.2156236 , -1.26205757],[-1.23456037, -0.04558866],[-0.01531301,  1.5273028],[1.0,1.2]] # The goal positions of the robots in the map
+goals: [[0.5,1],[0.5,-1]]
+max_distance_measure: 6.0 # The maximum distance that the robots can measure (should be the size of the map approximately or larger)
+observation_error_std: 0.0 # The standard deviation of the observation error
+use_ep: true # Use depth of reasoning (Epistemic logic) or not
+use_rhc: false # Use Receding Horizon Control (RHC) or not
+convergence_type: 'convergent' # The convergence type of the simulation (exclusive or convergent)
+use_threading: false # Use threading for the simulation or not
+use_mcts: false # Use Monte Carlo Tree Search (MCTS) for the simulation or not
+horizon: 1 # The horizon of the MCTS
+mcts_iterations: 1000 # The number of iterations for the MCTS
+aif_service_name: 'aif_start_planning' # The topic name of the AIF rosservice -- this starts the aif node to send commands to robot
+aif_service_topic: 'aif_service' # The topic name that the AIF node listens to
+dt: 0.1 # The time step of the simulation
+world_frame_id: 'vicon/world' # The frame ID of the world
+convergence_threshold: 0.6 # The threshold of the convergence
+
+# Rosbot IPs: 
+# - 192.168.8.224 (rosbot8)
+# - 192.168.8.223 (rosbot10)
+# - 192.168.8.120 (rosbot1)
+# - 192.168.8.232 (rosbot4)
+agents:
+  - id: 0
+    namespace: 'rosbot8'
+    sensors: 'front_laser' # The sensor name for the robot
+    velocity_arg_num: 4 # The velocity options of the robot
+    velocity_min: 0. # The minimum velocity of the robot
+    velocity_max: 0.2 # The maximum velocity of the robot
+    heading_arg_num: 8 # The heading options of the robot
+    heading_min: -1.57 # The minimum angular velocity of the robot
+    heading_max: 1.57 # The maximum angular velocity of the robot
+    pose_topic: '/vicon/rosbot8/rosbot8' # The topic name of the pose
+    transformed_pose_topic: '/rosbot8/transformed_pose'
+    cmd_vel_topic: 'cmd_vel' # The topic name of the velocity command
+    scan_topic: 'front/scan' # The topic name of the laser scan
+    transformed_scan_topic: 'transformed_scan'
+    scan_frame_id: 'front_laser' # The frame ID of the laser scan
+    agent_type: 'A' # The type of measurement that the robot can make (A: Depth, B: Relative Angle)
+    init_x: 0.0 # The initial x position of the robot
+    init_y: 0.0 # The initial y position of the robot
+    init_yaw: 1.4 # The initial orientation of the robot
+    home_base: [0.0, 0.0] # The home base of the robot
+    path_color: [228,26,28] # The color of the path of the robot in RGB
+
+  - id: 1
+    namespace: 'rosbot4'
+    sensors: 'front_laser' # The sensor name for the robot
+    velocity_arg_num: 4 # The velocity options of the robot
+    velocity_min: 0.0 # The minimum velocity of the robot
+    velocity_max: 0.2 # The maximum velocity of the robot
+    heading_arg_num: 8 # The heading options of the robot
+    heading_min: -1.57 # The minimum angular velocity of the robot
+    heading_max: 1.57 # The maximum angular velocity of the robot
+    pose_topic: '/vicon/rosbot4/rosbot4' # The topic name of the pose
+    transformed_pose_topic: '/rosbot4/transformed_pose'
+    cmd_vel_topic: 'cmd_vel' # The topic name of the velocity command
+    scan_topic: 'front/scan' # The topic name of the laser scan
+    transformed_scan_topic: 'transformed_scan'
+    scan_frame_id: 'front_laser' # The frame ID of the laser scan
+    agent_type: 'A' # The type of measurement that the robot can make (A: Depth, B: Relative Angle)
+    init_x: 0.0 # The initial x position of the robot
+    init_y: 0.0 # The initial y position of the robot
+    init_yaw: 1.4 # The initial orientation of the robot
+    home_base: [0.0, 0.0] # The home base of the robot
+    path_color: [55,126,184] # The color of the path of the robot in RGB
+
+  # - id: 2
+  #   namespace: 'rosbot1'
+  #   sensors: 'front_laser' # The sensor name for the robot
+  #   velocity_arg_num: 4 # The velocity options of the robot
+  #   velocity_min: 0.0 # The minimum velocity of the robot
+  #   velocity_max: 0.2 # The maximum velocity of the robot
+  #   heading_arg_num: 8 # The heading options of the robot
+  #   heading_min: -1.57 # The minimum angular velocity of the robot
+  #   heading_max: 1.57 # The maximum angular velocity of the robot
+  #   pose_topic: '/vicon/rosbot1/rosbot1' # The topic name of the pose
+  #   transformed_pose_topic: '/rosbot1/transformed_pose'
+  #   cmd_vel_topic: 'cmd_vel' # The topic name of the velocity command
+  #   scan_topic: 'front/scan' # The topic name of the laser scan
+  #   transformed_scan_topic: 'transformed_scan'
+  #   scan_frame_id: 'front_laser' # The frame ID of the laser scan
+  #   agent_type: 'A' # The type of measurement that the robot can make (A: Depth, B: Relative Angle)
+  #   init_x: 0.0 # The initial x position of the robot
+  #   init_y: 0.0 # The initial y position of the robot
+  #   init_yaw: 1.4 # The initial orientation of the robot
+  #   home_base: [0.0, 0.0] # The home base of the robot
+  #   path_color: [77,175,74] # The color of the path of the robot in RGB
+
+  # - id: 3
+  #   namespace: 'rosbot10'
+  #   sensors: 'front_laser' # The sensor name for the robot
+  #   velocity_arg_num: 4 # The velocity options of the robot
+  #   velocity_min: 0.0 # The minimum velocity of the robot
+  #   velocity_max: 0.2 # The maximum velocity of the robot
+  #   heading_arg_num: 8 # The heading options of the robot
+  #   heading_min: -1.57 # The minimum angular velocity of the robot
+  #   heading_max: 1.57 # The maximum angular velocity of the robot
+  #   pose_topic: '/vicon/rosbot10/rosbot10' # The topic name of the pose
+  #   transformed_pose_topic: '/rosbot10/transformed_pose'
+  #   cmd_vel_topic: 'cmd_vel' # The topic name of the velocity command
+  #   scan_topic: 'front/scan' # The topic name of the laser scan
+  #   transformed_scan_topic: 'transformed_scan'
+  #   scan_frame_id: 'front_laser' # The frame ID of the laser scan
+  #   agent_type: 'A' # The type of measurement that the robot can make (A: Depth, B: Relative Angle)
+  #   init_x: 0.0 # The initial x position of the robot
+  #   init_y: 0.0 # The initial y position of the robot
+  #   init_yaw: 1.4 # The initial orientation of the robot
+  #   home_base: [0.0, 0.0] # The home base of the robot
+  #   path_color: [152,78,163] # The color of the path of the robot in RGB
