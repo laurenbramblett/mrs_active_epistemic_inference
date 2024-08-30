@@ -3,6 +3,7 @@ The most updated notebook is `notebook_aif_iterative_goals.ipynb` which allows t
 1. `use_ep`: Set to `True` or `False` to toggle our approach
 2. `greedy`: Set to `True` if you want to use a greedy approach (zero-order reasoning). If true, does not allow first or higher order reasoning from (1)
 3. `convergence_type`: Set to `convergent` if you want robots to have a rendezvous mission and `exclusive` if running task allocation
+
 Note: `convergence_type` should always be exclusive in the `notebook_aif_iterative_goals.ipynb`
 
 ##### Installation
