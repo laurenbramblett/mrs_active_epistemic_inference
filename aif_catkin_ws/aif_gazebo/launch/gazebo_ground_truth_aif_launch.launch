@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!-- Launches Jackal Gazebo simulation in an empty world. -->
+
+<launch>
+
+  <arg name="gui"        default="false"/>
+  <arg name="rviz"       default="false"/>
+  <arg name="config0"    default="front_laser"/>
+  <arg name="config1"    default="front_laser"/>
+  <arg name="world"      default="empty.world"/>
+  <arg name="world_name" default="basic"/>
+  <!-- <arg name="map_file"   default="$(find astar)/maps/capstone_stuff.yaml" /> -->
+  <arg name="config_file" default="$(find multi_jackal_aif)/configs/aif_gazebo_iterative_params.yaml" />
+  <param name="params_file" type="string" value="$(arg config_file)" />
+  <rosparam file="$(arg config_file)" command="load" />
+
+  <env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find rotors_gazebo)/models"/>
+  <env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find rotors_gazebo)/models"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find rotors_gazebo)/worlds/$(arg world_name).world"/>
+    <!-- <arg name="debug" value="true"/> -->
+    <arg name="paused" value="false"/>
+    <!-- <arg name="gui" value="false"/> -->
+  </include>
+
+
+  <!-- Publish Gazebo Ground Truth Pose -->
+  <node pkg="multi_jackal_aif" type="publish_ground_truth_pose.py" name="publish_ground_truth_pose" output="screen" />
+
+  <!-- Start planning service -->
+  <node pkg="multi_jackal_aif" type="active_inference_server.py" name="active_inference_server" output="screen" >
+    <remap to="aif_service_topic" from="aif_service_topic" />
+    <remap to="aif_service_name" from="aif_service_call" />
+  </node>
+ 
+  <!--Transform frame id for scanners-->
+  <!-- <node pkg="multi_jackal_aif" type="translate_frame_id.py" name="translate_frame_id" output="screen"> -->
+  <!-- </node> -->
+
+  <node pkg="multi_jackal_aif" type="launch_gazebo_ground_truth.py" name="launch_gazebo_ground_truth" output="screen" />
+
+</launch>

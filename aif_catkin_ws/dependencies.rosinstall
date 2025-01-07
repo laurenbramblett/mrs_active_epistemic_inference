@@ -1,0 +1,1 @@
+- git: {local-name: multi_jackal_amcl, uri: 'git@github.com:UVA-BezzoRobotics-AMRLab/multi_jackal_amcl.git'}

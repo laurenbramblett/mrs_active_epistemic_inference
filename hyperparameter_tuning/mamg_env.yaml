@@ -1,0 +1,19 @@
+env: MAMGEnv-v0
+algo: ppo
+hyperparams:
+  n_steps: 2048
+  batch_size: 64
+  learning_rate: 3e-4
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  clip_range: 0.2
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  gae_lambda: 0.95
+  policy: 'MlpPolicy'
+  policy_kwargs: 'dict(net_arch=[dict(pi=[64, 64], vf=[64, 64])])'
+  verbose: 1
+n_timesteps: 100000
+eval_freq: 10000
+n_eval_episodes: 5

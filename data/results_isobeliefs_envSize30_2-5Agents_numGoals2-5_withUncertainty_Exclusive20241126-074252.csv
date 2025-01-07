@@ -1,0 +1,81 @@
+seed,converged,num_goals,num_agents,agent_types,use_ep,greedy,num_iters
+0,True,2,2,['A' 'A'],True,False,20
+0,True,3,3,['A' 'B' 'B'],True,False,34
+0,True,4,4,['B' 'A' 'B' 'B'],True,False,43
+0,True,5,5,['A' 'B' 'A' 'B' 'B'],True,False,60
+0,True,2,2,['A' 'A'],False,False,20
+0,True,3,3,['A' 'B' 'B'],False,False,45
+0,True,4,4,['B' 'A' 'B' 'B'],False,False,77
+0,False,5,5,['A' 'B' 'A' 'B' 'B'],False,False,99
+1,True,2,2,['A' 'B'],True,False,31
+1,True,3,3,['B' 'A' 'A'],True,False,40
+1,True,4,4,['B' 'B' 'B' 'B'],True,False,44
+1,True,5,5,['B' 'B' 'B' 'B' 'B'],True,False,37
+1,True,2,2,['A' 'B'],False,False,31
+1,True,3,3,['B' 'A' 'A'],False,False,35
+1,False,4,4,['B' 'B' 'B' 'B'],False,False,99
+1,False,5,5,['B' 'B' 'B' 'B' 'B'],False,False,99
+2,True,2,2,['B' 'B'],True,False,33
+2,True,3,3,['B' 'A' 'A'],True,False,24
+2,True,4,4,['A' 'B' 'A' 'A'],True,False,26
+2,True,5,5,['A' 'A' 'A' 'B' 'B'],True,False,42
+2,True,2,2,['B' 'B'],False,False,34
+2,True,3,3,['B' 'A' 'A'],False,False,24
+2,True,4,4,['A' 'B' 'A' 'A'],False,False,23
+2,True,5,5,['A' 'A' 'A' 'B' 'B'],False,False,95
+3,True,2,2,['B' 'A'],True,False,40
+3,True,3,3,['A' 'A' 'B'],True,False,84
+3,True,4,4,['A' 'B' 'B' 'A'],True,False,28
+3,True,5,5,['B' 'A' 'A' 'B' 'A'],True,False,93
+3,True,2,2,['B' 'A'],False,False,40
+3,False,3,3,['A' 'A' 'B'],False,False,99
+3,True,4,4,['A' 'B' 'B' 'A'],False,False,69
+3,False,5,5,['B' 'A' 'A' 'B' 'A'],False,False,99
+4,False,2,2,['B' 'B'],True,False,99
+4,True,3,3,['A' 'A' 'B'],True,False,71
+4,True,4,4,['A' 'B' 'A' 'A'],True,False,70
+4,True,5,5,['A' 'B' 'A' 'A' 'B'],True,False,67
+4,False,2,2,['B' 'B'],False,False,99
+4,True,3,3,['A' 'A' 'B'],False,False,77
+4,True,4,4,['A' 'B' 'A' 'A'],False,False,60
+4,True,5,5,['A' 'B' 'A' 'A' 'B'],False,False,66
+5,False,2,2,['B' 'A'],True,False,99
+5,True,3,3,['A' 'B' 'B'],True,False,50
+5,True,4,4,['B' 'A' 'A' 'B'],True,False,48
+5,True,5,5,['A' 'B' 'A' 'B' 'A'],True,False,46
+5,False,2,2,['B' 'A'],False,False,99
+5,True,3,3,['A' 'B' 'B'],False,False,48
+5,True,4,4,['B' 'A' 'A' 'B'],False,False,48
+5,True,5,5,['A' 'B' 'A' 'B' 'A'],False,False,41
+6,True,2,2,['B' 'B'],True,False,68
+6,True,3,3,['A' 'A' 'B'],True,False,43
+6,True,4,4,['B' 'B' 'A' 'A'],True,False,54
+6,True,5,5,['A' 'B' 'A' 'A' 'A'],True,False,70
+6,True,2,2,['B' 'B'],False,False,65
+6,True,3,3,['A' 'A' 'B'],False,False,44
+6,True,4,4,['B' 'B' 'A' 'A'],False,False,55
+6,True,5,5,['A' 'B' 'A' 'A' 'A'],False,False,77
+7,True,2,2,['A' 'A'],True,False,98
+7,True,3,3,['A' 'A' 'B'],True,False,53
+7,True,4,4,['A' 'B' 'B' 'A'],True,False,26
+7,False,5,5,['B' 'B' 'A' 'A' 'A'],True,False,99
+7,True,2,2,['A' 'A'],False,False,98
+7,True,3,3,['A' 'A' 'B'],False,False,51
+7,True,4,4,['A' 'B' 'B' 'A'],False,False,29
+7,True,5,5,['B' 'B' 'A' 'A' 'A'],False,False,43
+8,True,2,2,['A' 'B'],True,False,70
+8,True,3,3,['A' 'B' 'A'],True,False,32
+8,True,4,4,['B' 'A' 'B' 'B'],True,False,71
+8,False,5,5,['A' 'A' 'A' 'B' 'B'],True,False,99
+8,True,2,2,['A' 'B'],False,False,76
+8,True,3,3,['A' 'B' 'A'],False,False,34
+8,True,4,4,['B' 'A' 'B' 'B'],False,False,63
+8,False,5,5,['A' 'A' 'A' 'B' 'B'],False,False,99
+9,True,2,2,['A' 'B'],True,False,21
+9,True,3,3,['A' 'B' 'A'],True,False,34
+9,True,4,4,['A' 'A' 'A' 'A'],True,False,33
+9,True,5,5,['B' 'B' 'B' 'B' 'A'],True,False,50
+9,True,2,2,['A' 'B'],False,False,26
+9,True,3,3,['A' 'B' 'A'],False,False,30
+9,True,4,4,['A' 'A' 'A' 'A'],False,False,33
+9,False,5,5,['B' 'B' 'B' 'B' 'A'],False,False,99

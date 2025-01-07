@@ -1,0 +1,2 @@
+seed,converged,num_goals,num_agents,agent_types,use_ep,num_iters
+0,True,2,2,['A' 'A'],True,12

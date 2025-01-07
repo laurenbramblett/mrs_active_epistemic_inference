@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "aif_catkin_ws/aif_gazebo"
+		},
+		{
+			"path": "../../multi_jackal_amcl/multi_jackal_tutorials"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<!-- Launches Jackal Gazebo simulation in an empty world. -->
+
+<launch>
+
+<node pkg="multi_jackal_aif" type="run_gazebo_aif.py" name="run_gazebo_aif" output="screen" >
+  <param name="~agent_id" value="1" />
+  <param name="~params_file" value="$(find multi_jackal_aif)/configs/aif_gazebo_params.yaml" />
+  <param name="~planning_service_topic" value="/aif_service" />
+</node>
+
+</launch>
