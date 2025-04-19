@@ -1,4 +1,13 @@
 ### This repository is a playground for collaboration in Active Inference and Epistemic Planning
+If using this code, please cite our paper currently under review
+```
+@article{bramblett2025implicit,
+  title={Implicit Coordination using Active Epistemic Inference},
+  author={Bramblett, Lauren and Reasoner, Jonathan and Bezzo, Nicola},
+  journal={arXiv preprint arXiv:2501.03907},
+  year={2025}
+}
+```
 The most updated notebook is `notebook_aif_iterative_goals.ipynb` which allows the robots to iteratively select and complete goals. The most updated notebook for single goals is `notebook_aif_single_goals.ipynb`. The output of these files is a mp4 or interactive plot of robots completing the mission objectives. Toggle parameters such as:
 1. `use_ep`: Set to `True` or `False` to toggle our approach
 2. `greedy`: Set to `True` if you want to use a greedy approach (zero-order reasoning). If true, does not allow first or higher order reasoning from (1)
@@ -88,4 +97,6 @@ changes to code will occur in the `~/aif_catkin_ws/mrs_active_epistemic_inferenc
 2. [Active Inference and Behavior Trees for Reactive Action Planning and Execution in Robotics](https://arxiv.org/pdf/2011.09756)
 3. Baseline paper for multi-robot task allocation (CBBA): [Consensus-Based Decentralized Auctions for Robust Task Allocation](https://dspace.mit.edu/bitstream/handle/1721.1/52330/Choi_Consensus-Based-Decentralized.pdf?sequence=2)
 4. Simple decentralized rendezvous paper that I really like: [Bayesian Rendezvous for Distributed Robotic Systems](https://web.archive.org/web/20170818191431id_/https://infoscience.epfl.ch/record/168217/files/paper.pdf)
+
+
 
